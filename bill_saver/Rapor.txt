@@ -1,0 +1,16 @@
+Kış aylarında ısınma genel bir ihtiyaç.Herkes gibi ben de bulunduğum yeri ısıtmak için enerji harcıyorum.
+Odamda doğalgaz peteği var ve hangi seviyede çalışacağını ben manuel ayarlıyorum.Özellikle Aralık-Ocak
+aylarında fazlaca yakmam gerekiyor.Maalesef peteklerde termostatlı bir sistem bulunmuyor.Bu sebeple odam
+yeterince ısındığında kapatmam gerekiyor.Bazen peteği kapatmayı unuttuğum zamanlarda petek gereksiz bir
+şekilde sabaha kadar yanmış oluyor.Bu durum hem aşırı sıcağa hem de gereksiz yakıt tüketimine neden oluyor.
+
+Yaptığım bu proje ile bu sıkıntıya çözüm buldum.Bunun için Arduino seti kullandım.Öncelikle ortamdaki sıcaklığı
+ölçmek için LM35 sıcaklık sensöründen yararlandım.Daha doğru ve sapmayan bir ölçüm için 2 adet sıcaklık sensörünü
+breadboard'un 2 ucuna yerleştirdim.Daha sonra analog çıkışlardan aldığım bilgiyle doğru kodlamayı yaparak
+ortamın sıcaklığını hesapladım.
+
+Asıl işlev olan alarm verme durumu ise bu hesaplamadan sonra geliyor.Bulduğum celcius cinsinden olan sıcaklık
+değeri belirli bir seviyeyi(default 21 celcius) geçince düzeneğe bağladığım kırmızı led ve buzzer senkronize
+bir şekilde çalışmaya başlıyorlar.Bunlara ek olarak sisteme bağladığım LCD ekrana anlık sıcaklığı yazdırdım.
+Tüm bunların sayesinde ortamın sıcaklığını bana gösteren ve istediğim sıcaklık seviyesinin üstüne çıktığında
+bana görsel ve işitsel uyarı veren projemi tamamlamış ve sorunuma çözüm üretmiş oldum.
